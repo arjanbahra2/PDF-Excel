@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF to Excel Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>PDF → Excel Converter</h1>
+  <p>Upload a text-based PDF sales report and download an Excel file.</p>
+
+  <input type="file" id="pdfFile" accept="application/pdf" />
+  <button id="convertBtn" disabled>Convert to Excel</button>
+
+  <p id="status"></p>
+
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <!-- SheetJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
